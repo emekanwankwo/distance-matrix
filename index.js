@@ -1,3 +1,6 @@
 const distanceMatrix = require('./src');
 
-module.exports = distanceMatrix;
+module.exports = {
+  getDistanceMatrix: distanceMatrix.getDistanceMatrix,
+  getMockDistanceMatrix: distanceMatrix.getMockDistanceMatrix
+};

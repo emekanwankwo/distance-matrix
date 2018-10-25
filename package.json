@@ -1,7 +1,7 @@
 {
-  "name": "distance-matrix",
+  "name": "node-distance-matrix",
   "version": "1.0.0",
-  "description": "A distance matrix package that consumes Google Distance Matrix api to get distances between locations",
+  "description": "A node distance matrix package that consumes Google Distance Matrix api to get distances between locations",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,8 @@
     "distance-matrix",
     "google-distance-matrix",
     "node-distance",
-    "node-distance-matrix"
+    "node-distance-matrix",
+    "google-maps"
   ],
   "author": "Ethan Nwankwo",
   "license": "ISC",
