@@ -27,13 +27,24 @@ Access the distance data using a thenable:
 
 `distanceMatrix.then(response => { console.log(response) });`
 
-To access the sample response for the locations, use:
+#### To access the sample mock response for the package, use:
 
 `const mockDistanceMatrix = NodeDistanceMatrix.getMockDistanceMatrix();`
 
 Then,
 
 `mockDistanceMatrix.then(response => { console.log(response) });`
+
+#### Using Async/Await
+To access the distance matrix using async/await method, use the folowing method.
+```
+import DistanceMatrix from 'node-distance-matrix';
+
+const getDistanceMatrix = async () => {
+  const distanceMatrix = await DistanceMatrix.getDistanceMatrix(apikey, origin, destination);
+  console.log(distanceMatrix);
+}
+```
 
 ### Author:
 
