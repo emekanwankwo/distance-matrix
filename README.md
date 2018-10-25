@@ -13,13 +13,15 @@ Require and initialize the package using:
 
 Access the getDistanceMatrix method using
 
--  `const distanceMatrix = NodeDistanceMatrix.getDistanceMatrix(apiKey, origin, destination);`
+-  `const distanceMatrix = NodeDistanceMatrix.getDistanceMatrix(apiKey, origin, destination, mode);`
 
 **apiKey** is the google console key for your project.
 
 **origin** is the start location for the distance, which can be an address or a latitude/longitude, it can also be an array of locations.
 
 **destination** is the end location, which can be an address or a latitude/longitude, it can also be an array of locations.
+
+**mode** is the mode of transportation, it can be driving (default), walking or bicycling.
 
 Access the distance data using a thenable:
 
