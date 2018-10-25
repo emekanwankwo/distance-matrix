@@ -20,8 +20,8 @@ const getDistanceMatrix = async (apiKey, origins, destinations, mode = 'driving'
     tripDestinations = destinations.reduce(reducer);
   }
   const distanceUrl = `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${tripOrigins}&destinations=${tripDestinations}&mode=${mode}&key=${apiKey}`
-    // Use google distance matrix APi for dev and production
-    const distanceMatrixResponse = {};
+    // Use google distance matrix API
+    //@TODO: Tailor desired responses
     const distanceMatrix = axios.get(distanceUrl)
       .then(response => {
         return response;

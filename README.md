@@ -1,5 +1,5 @@
 # node-distance-matrix
-A distance matrix package that consumes Google Distance Matrix api to get distances between locations
+A distance matrix package that consumes [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/start) to get distances between locations
 
 
 ### How To Use

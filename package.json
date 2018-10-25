@@ -1,7 +1,7 @@
 {
   "name": "node-distance-matrix",
   "version": "1.0.0",
-  "description": "A node distance matrix package that consumes Google Distance Matrix api to get distances between locations",
+  "description": "A node distance matrix package that consumes Google Distance Matrix API  to get distances between locations",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
