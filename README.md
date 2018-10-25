@@ -3,9 +3,9 @@ A distance matrix package that consumes [Google Distance Matrix API](https://dev
 
 
 ### How To Use
-require the package in your application using:
+Install the package using:
 
-- install the package using npm `npm install node-distance-matrix`
+`npm install node-distance-matrix --save`
 
 Require and initialize the package using:
 
@@ -35,6 +35,6 @@ Then,
 
 `mockDistanceMatrix.then(response => { console.log(response) });`
 
-Author:
+### Author:
 
 [Ethan Nwankwo](https://github.com/andela-cnwankwo)
