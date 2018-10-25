@@ -1,0 +1,31 @@
+{
+  "name": "node-distance-matrix",
+  "version": "1.0.0",
+  "description": "A node distance matrix package that consumes Google Distance Matrix API  to get distances between locations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-cnwankwo/distance-matrix.git"
+  },
+  "keywords": [
+    "distance",
+    "matrix",
+    "distance-matrix",
+    "google-distance-matrix",
+    "node-distance",
+    "node-distance-matrix",
+    "google-maps"
+  ],
+  "author": "Ethan Nwankwo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-cnwankwo/distance-matrix/issues"
+  },
+  "homepage": "https://github.com/andela-cnwankwo/distance-matrix#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
