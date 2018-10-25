@@ -1,6 +1,6 @@
 {
   "name": "node-distance-matrix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node distance matrix package that consumes Google Distance Matrix API  to get distances between locations",
   "main": "index.js",
   "scripts": {
