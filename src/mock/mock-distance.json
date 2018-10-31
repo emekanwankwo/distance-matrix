@@ -13,6 +13,10 @@
                  "text" : "3 hours 49 mins",
                  "value" : 13725
               },
+              "duration_in_traffic": {
+                  "text": "4 hours 10 mins",
+                  "value": 15015
+              },
               "status" : "Mock Distance Matrix Response"
            }
         ]
