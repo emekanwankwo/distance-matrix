@@ -11,9 +11,13 @@ Require and initialize the package using:
 
 - const `NodeDistanceMatrix = require('node-distance-matrix);`
 
-Access the getDistanceMatrix method using
+Access the `getDistanceMatrix` method using
 
 -  `const distanceMatrix = NodeDistanceMatrix.getDistanceMatrix(apiKey, origin, destination, mode);`
+
+Access the `getDistanceMatrixWithTraffic` method using
+
+-  `const distanceMatrixWithTraffic = NodeDistanceMatrix.getDistanceMatrixWithTraffic(apiKey, origin, destination, departure_time);`
 
 **apiKey** is the google console key for your project.
 
@@ -22,6 +26,8 @@ Access the getDistanceMatrix method using
 **destination** is the end location, which can be an address or a latitude/longitude, it can also be an array of locations.
 
 **mode** is the mode of transportation, it can be driving (default), walking or bicycling.
+
+**departure_time** is a date integer in seconds since midnight, January 1, 1970 UTC
 
 Access the distance data using a thenable:
 
@@ -43,6 +49,19 @@ import DistanceMatrix from 'node-distance-matrix';
 const getDistanceMatrix = async () => {
   const distanceMatrix = await DistanceMatrix.getDistanceMatrix(apikey, origin, destination);
   console.log(distanceMatrix.data);
+}
+```
+
+#### Return Traffic Data
+To access the distance matrix with traffic data, specify a departure_time as an integer in seconds. We use the `getDistanceMatrixWithTraffic` method.
+```
+import DistanceMatrix from 'node-distance-matrix';
+
+const dateInteger = Date.parse('November 1, 2020');
+
+const getDistanceMatrixWithTraffic = async () => {
+  const distanceMatrixWithTraffic = await DistanceMatrix.getDistanceMatrixWithTraffic(apikey, origin, destination, dateInteger);
+  console.log(distanceMatrixWithTraffic.data);
 }
 ```
 
