@@ -13,11 +13,11 @@ Require and initialize the package using:
 
 Access the `getDistanceMatrix` method using
 
--  `const distanceMatrix = NodeDistanceMatrix.getDistanceMatrix(apiKey, origin, destination, mode);`
+-  `const distanceMatrix = NodeDistanceMatrix.getDistanceMatrix(apiKey, origin, destination, mode, unitType);`
 
 Access the `getDistanceMatrixWithTraffic` method using
 
--  `const distanceMatrixWithTraffic = NodeDistanceMatrix.getDistanceMatrixWithTraffic(apiKey, origin, destination, departure_time);`
+-  `const distanceMatrixWithTraffic = NodeDistanceMatrix.getDistanceMatrixWithTraffic(apiKey, origin, destination, departure_time, unitType);`
 
 **apiKey** is the google console key for your project.
 
@@ -28,6 +28,8 @@ Access the `getDistanceMatrixWithTraffic` method using
 **mode** is the mode of transportation, it can be driving (default), walking or bicycling.
 
 **departure_time** is a date integer in seconds since midnight, January 1, 1970 UTC
+
+**unitType** is the unit for calculating the distance matrix, it can be imperial (default), or metric. 
 
 Access the distance data using a thenable:
 
@@ -65,6 +67,7 @@ const getDistanceMatrixWithTraffic = async () => {
 }
 ```
 
-### Author:
+### Contributors:
 
-[Ethan Nwankwo](https://github.com/andela-cnwankwo)
+- [Ethan Nwankwo](https://github.com/andela-cnwankwo)
+- [Victor Nwaiwu](https://github.com/vonvick)
